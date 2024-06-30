@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+tbody > tr:last-of-type td {
+  border-bottom: unset;
+}
+
+@layer base {
+  th,
+  td {
+    @apply border-b border-r border-indigo-600 p-2 md:p-3;
+  }
+}
